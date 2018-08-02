@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/text_titleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="5dp"
+        android:text="id:"/>
+
+    <TextView
+        android:id="@+id/text_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="id"
+        app:layout_constraintStart_toEndOf="@+id/text_titleID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_titleNodeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Node id:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_titleID"
+         />
+
+    <TextView
+        android:id="@+id/text_NodeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="node id"
+        app:layout_constraintStart_toEndOf="@+id/text_titleNodeID"
+        app:layout_constraintTop_toBottomOf="@+id/text_ID" />
+
+    <TextView
+        android:id="@+id/text_titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_NodeID"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Name:"/>
+
+    <TextView
+        android:id="@+id/text_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="name"
+        app:layout_constraintStart_toEndOf="@id/text_titleName"
+        app:layout_constraintTop_toBottomOf="@+id/text_NodeID" />
+
+    <TextView
+        android:id="@+id/text_titleFullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titleName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Fulll name:"/>
+
+    <TextView
+        android:id="@+id/text_FullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="full name"
+        app:layout_constraintStart_toEndOf="@id/text_titleFullname"
+        app:layout_constraintTop_toBottomOf="@+id/text_Name" />
+
+    <TextView
+        android:id="@+id/text_titleOwnerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titleFullname"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Owner ID:"/>
+
+    <TextView
+        android:id="@+id/text_OwnerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="owner id"
+        app:layout_constraintStart_toEndOf="@id/text_titleOwnerID"
+        app:layout_constraintTop_toBottomOf="@+id/text_FullName" />
+
+    <TextView
+        android:id="@+id/text_titleOwnerNodeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titleOwnerID"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Owner Node ID:"/>
+
+    <TextView
+        android:id="@+id/text_OwnerNodeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="owner node id"
+        app:layout_constraintStart_toEndOf="@id/text_titleOwnerNodeID"
+        app:layout_constraintTop_toBottomOf="@+id/text_OwnerID" />
+
+    <TextView
+        android:id="@+id/text_titleAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_OwnerNodeID"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="Avatar URL:"/>
+
+    <TextView
+        android:id="@+id/text_AvatarURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="avatar"
+        app:layout_constraintStart_toEndOf="@id/text_titleAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/text_OwnerNodeID" />
+
+    <TextView
+        android:id="@+id/text_titleURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titleAvatar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="URL:"/>
+
+    <TextView
+        android:id="@+id/text_URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Url"
+        app:layout_constraintStart_toEndOf="@id/text_titleURL"
+        app:layout_constraintTop_toBottomOf="@+id/text_AvatarURL" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="#dad8d8"
+        app:layout_constraintTop_toBottomOf="@id/text_URL"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
